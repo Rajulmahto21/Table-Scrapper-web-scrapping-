@@ -40,3 +40,8 @@ This is a python script which will help you to scrap out table from any HTML bas
    * `driver.get('https://www.nirfindia.org/2020/UniversityRanking.html')` // correction in link 
 * Now write the Xpath of the columns in place of "your_xpath_column_1" which you want to have in your csv file table and write all the xpath of column if you dont know to write the xpath you can refer to google or youtube or refer the example i have shown in how to use section.
    * `column_1 = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')` //correction in link
+
+# How To Use
+<b>Here i will show you how to use the script and here i have used a table in the below link which is to be scrapped</b>
+[https://www.worldometers.info/coronavirus/s](https://www.worldometers.info/coronavirus/)
+
