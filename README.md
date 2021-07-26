@@ -33,4 +33,10 @@ This is a python script which will help you to scrap out table from any HTML bas
    * Now extract the zip and remember the path of extracted chrome driver.
 
 # Setting Up
-* Download the 
+* Download the Table Scrapper.py file from above and open it in jupyter notebook.
+* Now write the path where you extracted the google chrome web driver in place of "your_webdriver_path".
+    * `driver = webdriver.Chrome("C:\webdrivers\chromedriver.exe")`
+* Now write the URL of the website in which the table to be scrapped is present in place of "your_website_url"
+   * `driver.get('https://www.nirfindia.org/2020/UniversityRanking.html')`
+* Now write the Xpath of the columns in place of "your_xpath_column_1" which you want to have in your csv file table and write all the xpath of column if you dont know to write the xpath you can refer to google or youtube or refer the example i have shown in how to use section.
+   * `column_1 = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')`
