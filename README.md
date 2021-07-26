@@ -45,3 +45,6 @@ This is a python script which will help you to scrap out table from any HTML bas
 <b>Here i will show you how to use the script and here i have used a table in the below link which is to be scrapped</b>
 [https://www.worldometers.info/coronavirus/s](https://www.worldometers.info/coronavirus/)
 
+* This is the table to be scrapped.
+  * ![3](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/3.PNG)
+
