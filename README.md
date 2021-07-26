@@ -33,4 +33,4 @@ This is a python script which will help you to scrap out table from any HTML bas
    * Now extract the zip and remember the path of extracted chrome driver.
 
 # Setting Up
-
+* Download the 
