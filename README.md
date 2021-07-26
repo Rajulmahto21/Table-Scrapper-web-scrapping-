@@ -53,8 +53,8 @@ This is a python script which will help you to scrap out table from any HTML bas
 ![5](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/5.png)
 * Now to get the desired columns for our table we have to get their Xpath ,which will be then used in a loop to get all the rows in the.So,to get Xpath turn on the select element to inspect option at the top left corner as shown in the image below then, hover over the first row element on that column selected whose Xpath we need then, now in the inspection window you will se the respective code highlighted ,now right click on it,now click on copy, then copy XPath.
 In the example below to get all the institute id we will hover over the first record of the instute id named IR-O-U-0220 and then right click on the highlighted code to copy XPath as shown.
-![6](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/6.PNG)
-![7](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/7.PNG)
+![6](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/6.png)
+![7](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/7.png)
 
 * Now paste the Xpath in place the brackets and write the corresponding name of the column in varibale, do same for all columns and copy their respective Xpaths to their column name ,you can also add more columns.
  `institute_id = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')`
