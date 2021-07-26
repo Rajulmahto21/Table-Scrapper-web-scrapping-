@@ -47,4 +47,9 @@ This is a python script which will help you to scrap out table from any HTML bas
 
 * This is the table to be scrapped.
   * ![3](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/3.PNG)
+* Now right click on the page and select inspect from the drop down.![4](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/4.PNG)
+* Now write the Xpath as i write.So first of all we have to get the table id which we want ,for this look for the table html tag so that we can find the table id easily now as you will hover the cursor over the table id you can see the table being hightlighted in the webpage as you can see in the screenshot so in my case the table id is 
+`table id="main_table_countries_today"`
+![5](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/5.PNG)
+* 
 
