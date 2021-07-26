@@ -53,16 +53,24 @@ This is a python script which will help you to scrap out table from any HTML bas
 ![5](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/5.png)
 * Now to get the desired columns for our table we have to get their Xpath ,which will be then used in a loop to get all the rows in the.So,to get Xpath turn on the select element to inspect option at the top left corner as shown in the image below then, hover over the first row element on that column selected whose Xpath we need then, now in the inspection window you will se the respective code highlighted ,now right click on it,now click on copy, then copy XPath.
 In the example below to get all the institute id we will hover over the first record of the instute id named IR-O-U-0220 and then right click on the highlighted code to copy XPath as shown.
-![6](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/6.png)
-![7](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/7.png)
+   * ![6](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/6.png)
+   * ![7](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/7.png)
 
-* Now paste the Xpath in place the brackets and write the corresponding name of the column in varibale, do same for all columns and copy their respective Xpaths to their column name ,you can also add more columns.
+* Now in the python script paste the Xpath in place of the brackets and write the corresponding name of the column in varibale, do same for all columns and copy their respective Xpaths to their column name ,you can also add more columns.
  `institute_id = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')`
  `name = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[2]')`
  `city = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[3]')`
  `state = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[4]')`
  `score = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[5]')`
  `rank = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[6]')`
+   * ![8](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/8.PNG)
+* Now in the next part of the code `for i in range(len(city)):` in place of city you can specify any column name to get the length of the full table (i.e, all the records).
+* Now you have to keep the variable name same as you typed in starting in the next part of the code as shown below
+   *  ![9](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/9.PNG)
+* Now in the next part we will create and dataframe on all the collected data by using the pandas library and ultimately converting it into csv file which will be saved locally.
+   * ![10](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/10.PNG)
+* The whole code will look someting like this.
+   * ![11](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/11.PNG)
 
 
 
