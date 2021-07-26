@@ -37,19 +37,19 @@ This is a python script which will help you to scrap out table from any HTML bas
 * Now write the path where you extracted the google chrome web driver in place of "your_webdriver_path".
     * `driver = webdriver.Chrome("C:\webdrivers\chromedriver.exe")`
 * Now write the URL of the website in which the table to be scrapped is present in place of "your_website_url"
-   * `driver.get('https://www.nirfindia.org/2020/UniversityRanking.html')` // correction in link 
+   * `driver.get('https://www.nirfindia.org/2020/UniversityRanking.html')`
 * Now write the Xpath of the columns in place of "your_xpath_column_1" which you want to have in your csv file table and write all the xpath of column if you dont know to write the xpath you can refer to google or youtube or refer the example i have shown in how to use section.
    * `column_1 = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')` //correction in link
 
 # How To Use
 <b>Here i will show you how to use the script and here i have used a table in the below link which is to be scrapped</b>
-[https://www.worldometers.info/coronavirus/s](https://www.worldometers.info/coronavirus/)
+[https://www.nirfindia.org/2020/UniversityRanking.html](https://www.nirfindia.org/2020/UniversityRanking.html)
 
 * This is the table to be scrapped.
   * ![3](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/3.PNG)
 * Now right click on the page and select inspect from the drop down.![4](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/4.PNG)
 * Now write the Xpath as i write.So first of all we have to get the table id which we want ,for this look for the table html tag so that we can find the table id easily now as you will hover the cursor over the table id you can see the table being hightlighted in the webpage as you can see in the screenshot so in my case the table id is 
-`table id="main_table_countries_today"`
+`table id="tbl_overall"`
 ![5](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/5.png)
 * 
 
