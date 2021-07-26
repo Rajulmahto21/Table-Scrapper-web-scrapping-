@@ -38,18 +38,31 @@ This is a python script which will help you to scrap out table from any HTML bas
     * `driver = webdriver.Chrome("C:\webdrivers\chromedriver.exe")`
 * Now write the URL of the website in which the table to be scrapped is present in place of "your_website_url"
    * `driver.get('https://www.nirfindia.org/2020/UniversityRanking.html')`
-* Now write the Xpath of the columns in place of "your_xpath_column_1" which you want to have in your csv file table and write all the xpath of column if you dont know to write the xpath you can refer to google or youtube or refer the example i have shown in how to use section.
-   * `column_1 = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')` //correction in link
+* Now write the Xpath of the columns in place of "your_xpath_column_1" which you want to have in your csv file table and write all the xpath of column if you dont know to write the xpath you can refer to the example i have shown in how to use section.
+   * `column_1 = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')`
 
 # How To Use
 <b>Here i will show you how to use the script and here i have used a table in the below link which is to be scrapped</b>
 [https://www.nirfindia.org/2020/UniversityRanking.html](https://www.nirfindia.org/2020/UniversityRanking.html)
 
-* This is the table to be scrapped.
+* This is the table to be scrapped and we will copy this link and paste it in the script. `driver.get('https://www.nirfindia.org/2020/UniversityRanking.html')`
   * ![3](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/3.PNG)
 * Now right click on the page and select inspect from the drop down.![4](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/4.PNG)
-* Now write the Xpath as i write.So first of all we have to get the table id which we want ,for this look for the table html tag so that we can find the table id easily now as you will hover the cursor over the table id you can see the table being hightlighted in the webpage as you can see in the screenshot so in my case the table id is 
+* So first of all we have to get the table id which we want ,for this look for the table HTML tag so that we can find the table id easily now as you will hover the cursor over the table id you can see the table being hightlighted in the webpage as you can see in the screenshot so in my case the table id is 
 `table id="tbl_overall"`
 ![5](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/5.png)
-* 
+* Now to get the desired columns for our table we have to get their Xpath ,which will be then used in a loop to get all the rows in the.So,to get Xpath turn on the select element to inspect option at the top left corner as shown in the image below then, hover over the first row element on that column selected whose Xpath we need then, now in the inspection window you will se the respective code highlighted ,now right click on it,now click on copy, then copy XPath.
+In the example below to get all the institute id we will hover over the first record of the instute id named IR-O-U-0220 and then right click on the highlighted code to copy XPath as shown.
+![6](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/6.PNG)
+![7](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/7.PNG)
+
+* Now paste the Xpath in place the brackets and write the corresponding name of the column in varibale, do same for all columns and copy their respective Xpaths to their column name ,you can also add more columns.
+ `institute_id = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')`
+ `name = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[2]')`
+ `city = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[3]')`
+ `state = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[4]')`
+ `score = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[5]')`
+ `rank = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[6]')`
+
+
 
