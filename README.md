@@ -28,7 +28,7 @@ This is a python script which will help you to scrap out table from any HTML bas
     * For Selenium: `pip install selenium`
     * For Pandas: `pip install pandas`
 * Web Driver : [https://www.selenium.dev/downloads](https://www.selenium.dev/downloads)
-   * Open the above link and scroll down to "Browser" now click on the documentation link of your browser here i will show for google chrome.
+   * Open the above link and scroll down to "Browser" now click on the documentation link of your browser here i will show for google chrome.![1](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/1.PNG)
    * Now download the  ChromeDriver 91.0.4472.101 (recommended).![2](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/2.PNG)
    * Now extract the zip and remember the path of extracted chrome driver.
 
