@@ -1,10 +1,10 @@
 # Table-Scrapper-web-scrapping-
-This is a python script which will help you to scrap out table from any HTML based websites on the internet.Sometimes while creating a script ,project or system we need some data from a website or a web page which may be in the form of tables,some script require a .CSV or a list of data were required in order for them to work.So,this python script will help users to scrap tables from the web pages and automatically convert them to .CSV files so that it can be used in the projects or databases.This will include the following :
+This is a python script which will help you to scrap out table from any HTML based websites on the internet.Sometimes while creating a script ,project or system we need some data from a website or a web page which may be in the form of tables,some script require a .CSV or an excel file is required in order for them to work.So,this python script will help users to scrap tables from the web pages and automatically convert them to .CSV or an excel file so that it can be used in the projects or databases.This will include the following :
 
 * Entering the URL
 * Entering the required information to scrap out tables
 * Converting them to DataFrame
-* Finally converting them to .CSV file
+* Finally converting them to .CSV or an excel file.
 
 <b>Advantages of this script</b>
 
@@ -38,7 +38,7 @@ This is a python script which will help you to scrap out table from any HTML bas
     * `driver = webdriver.Chrome("C:\webdrivers\chromedriver.exe")`
 * Now write the URL of the website in which the table to be scrapped is present in place of "your_website_url"
    * `driver.get('https://www.nirfindia.org/2020/UniversityRanking.html')`
-* Now write the Xpath of the columns in place of "your_xpath_column_1" which you want to have in your csv file table and write all the xpath of column if you dont know to write the xpath you can refer to the example i have shown in how to use section.
+* Now write the Xpath of the columns in place of "your_xpath_column_1" which you want to have in your csv or an excel file table and write all the xpath of column if you dont know to write the xpath you can refer to the example i have shown in how to use section.
    * `column_1 = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')`
 
 # How To Use
@@ -60,10 +60,21 @@ In the example below to get all the institute id we will hover over the first re
 * Now in the next part of the code `for i in range(len(city)):` in place of city you can specify any column name to get the length of the full table (i.e, all the records).
 * Now you have to keep the variable name same as you typed in starting in the next part of the code as shown below
 ![9](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/9.png)
-* Now in the next part we will create and dataframe on all the collected data by using the pandas library and ultimately converting it into csv file which will be saved locally.
+* Now in the next part we will create and dataframe on all the collected data by using the pandas library and ultimately converting it into csv or an excel file which will be saved locally.
 ![10](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/10.png)
 * The whole code will look someting like this.
 ![11](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/11.png)
+* Now run the cells in order as shown in the below clip to finally generate a csv or anexcel file.
+![table scrapping](https://user-images.githubusercontent.com/59139755/127117991-15c7ee85-e3bf-4c01-aa7b-07abdfdcfac3.gif)
+
+* You can use
+   * `df_data.to_excel('nirf_ranking_result.xlsx', index =False)` for excel file.
+   * `df_data.to_csv('nirf_ranking_result.csv', index =False)` for .csv file.
+
+* The excel file generated 
+
+![12](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/12.PNG)
+
 
 
 
