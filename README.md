@@ -42,7 +42,7 @@ So this python script will help users to scrap tables from the web pages and aut
     * `driver = webdriver.Chrome("C:\webdrivers\chromedriver.exe")`
 * Now write the URL of the website in which the table to be scrapped is present in place of "your_website_url"
    * `driver.get('https://www.nirfindia.org/2020/UniversityRanking.html')`
-* Now write the Xpath of the columns in place of "your_xpath_column_1" which you want to have in your csv or an excel file table and write all the xpath of column if you dont know to write the xpath you can refer to the example i have shown in how to use section.
+* Now write the XPath of the columns in place of "your_xpath_column_1" which you want to have in your csv or an excel file table and write all the XPath of column if you dont know to write the XPath you can refer to the example i have shown in how to use section.
    * `column_1 = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')`
 
 # How To Use
@@ -54,13 +54,13 @@ So this python script will help users to scrap tables from the web pages and aut
 * Now right click on the page and select inspect from the drop down.![4](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/4.PNG)
 * So first of all we have to get the table id which we want ,for this look for the table HTML tag so that we can find the table id easily now as you will hover the cursor over the table id you can see the table being hightlighted in the webpage as you can see in the screenshot so in my case the table id is 
 `table id="tbl_overall"`![5](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/5.png)
-* Now to get the desired columns for our table we have to get their Xpath ,which will be then used in a loop to get all the rows in the.
-  So to get Xpath turn on the select element to inspect option at the top left corner as shown in the image below then, hover over the first row element on that column selected whose Xpath we need then in the inspection window you will see the respective code highlighted ,now right click on the code,now click on copy, then copy XPath.
+* Now to get the desired columns for our table we have to get their XPath ,which will be then used in a loop to get all the rows in the.
+  So to get XPath turn on the select element to inspect option at the top left corner as shown in the image below then, hover over the first row element on that column selected whose XPath we need then in the inspection window you will see the respective code highlighted ,now right click on the code,now click on copy, then copy XPath.
 In the example below to get all the institute id we will hover over the first record of the instute id named IR-O-U-0220 and then right click on the highlighted code to copy XPath as shown.
 ![6](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/6.png)
 ![7](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/7.png)
 
-* Now in the python script paste the Xpath in place of the brackets and write the corresponding name of the column in varibale, do same for all columns and copy their respective Xpaths to their column name ,you can also add more columns.![8](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/8.png)
+* Now in the python script paste the XPath in place of the brackets and write the corresponding name of the column in varibale, do same for all columns and copy their respective XPaths to their column name ,you can also add more columns.![8](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/8.png)
 * Now in the next part of the code `for i in range(len(city)):` in place of city you can specify any column name to get the length of the full table (i.e, all the records).
 * Now you have to keep the variable name same as you typed in starting in the next part of the code as shown below
 ![9](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/9.png)
@@ -68,7 +68,7 @@ In the example below to get all the institute id we will hover over the first re
 ![10](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/10.png)
 * The whole code will look someting like this.
 ![11](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/11.png)
-* Now run the cells in order as shown in the below clip to finally generate a csv or anexcel file.
+* Now run the cells in order as shown in the below clip to finally generate a csv or an excel file.
 ![table scrapping](https://user-images.githubusercontent.com/59139755/127117991-15c7ee85-e3bf-4c01-aa7b-07abdfdcfac3.gif)
 
 * You can use
