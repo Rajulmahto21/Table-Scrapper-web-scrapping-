@@ -14,6 +14,9 @@ So this python script will help users to scrap tables from the web pages and aut
 * Users can also get the updated tables which they could not get if they copy or manually enter data.
 * Programmers can get to know more about "WEB SCRAPPING" from this script.
 
+# Tech Stack
+* Python
+
 # Prequsites
 * Python
    * IDE (Jupyter Notebook is the recommended IDE )
