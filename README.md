@@ -1,5 +1,5 @@
 # Table-Scrapper-web-scrapping-
-This is a python script which will help you to scrap out table from any HTML based websites on the internet.Sometimes while creating a script ,project or system we need some data from a website or a web page which may be in the form of tables,some script require a .CSV or an excel file is required in order for them to work.
+This is a python script which will help you to scrap out table from any HTML based websites on the internet,sometimes while creating a script ,project or system we need some data from a website or a web page which may be in the form of tables,some script require a .CSV or an excel file is required in order for them to work.
 So this python script will help users to scrap tables from the web pages and automatically convert them to .CSV or an excel file so that it can be used in the projects or databases.This will include the following :
 
 * Entering the URL
