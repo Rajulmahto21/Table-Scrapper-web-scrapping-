@@ -25,7 +25,7 @@ So this python script will help users to scrap tables from the web pages and aut
 # Installation
 * Python : [https://www.python.org/downloads](https://www.python.org/downloads)
 * IDE : [https://www.anaconda.com/products/individual](https://www.anaconda.com/products/individual) (followed by installation of jupyter notebook)
-* Libraries: Open the directory of your installed python version and type the following lines followed by pressing enter
+* Libraries: Open the directory of your installed python version in command prompt and type the following lines followed by pressing enter
     * For Selenium: `pip install selenium`
     * For Pandas: `pip install pandas`
 * Web Driver : [https://www.selenium.dev/downloads](https://www.selenium.dev/downloads)
