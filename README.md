@@ -49,12 +49,12 @@ This is a python script which will help you to scrap out table from any HTML bas
   * ![3](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/3.PNG)
 * Now right click on the page and select inspect from the drop down.![4](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/4.PNG)
 * So first of all we have to get the table id which we want ,for this look for the table HTML tag so that we can find the table id easily now as you will hover the cursor over the table id you can see the table being hightlighted in the webpage as you can see in the screenshot so in my case the table id is 
-`table id="tbl_overall"`
-5.![5](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/5.png)
-* Now to get the desired columns for our table we have to get their Xpath ,which will be then used in a loop to get all the rows in the.So,to get Xpath turn on the select element to inspect option at the top left corner as shown in the image below then, hover over the first row element on that column selected whose Xpath we need then, now in the inspection window you will se the respective code highlighted ,now right click on it,now click on copy, then copy XPath.
+`table id="tbl_overall"`![5](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/5.png)
+* Now to get the desired columns for our table we have to get their Xpath ,which will be then used in a loop to get all the rows in the.
+  So to get Xpath turn on the select element to inspect option at the top left corner as shown in the image below then, hover over the first row element on that column selected whose Xpath we need then, now in the inspection window you will see the respective code highlighted ,now right click on thre code,now click on copy, then copy XPath.
 In the example below to get all the institute id we will hover over the first record of the instute id named IR-O-U-0220 and then right click on the highlighted code to copy XPath as shown.
- * 6.![6](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/6.png)
- * 7.![7](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/7.png)
+![6](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/6.png)
+![7](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/7.png)
 
 * Now in the python script paste the Xpath in place of the brackets and write the corresponding name of the column in varibale, do same for all columns and copy their respective Xpaths to their column name ,you can also add more columns.
  `institute_id = driver.find_elements_by_xpath('//table[@id="tbl_overall"]/tbody/tr/td[1]')`
@@ -70,7 +70,7 @@ In the example below to get all the institute id we will hover over the first re
 * Now in the next part we will create and dataframe on all the collected data by using the pandas library and ultimately converting it into csv file which will be saved locally.
    * 10.![10](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/10.png)
 * The whole code will look someting like this.
-* 11.![11](https://github.com/Rajulmahto21/Table-Scrapper-web-scrapping-/blob/main/Snips/11.png)
+
 
 
 
